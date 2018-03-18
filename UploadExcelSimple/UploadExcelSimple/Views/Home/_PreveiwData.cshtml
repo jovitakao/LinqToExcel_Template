@@ -1,0 +1,30 @@
+﻿@model IEnumerable<UploadExcelSimple.Models.UserList>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                User ID
+            </th>
+            <th>
+                User Name
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                   @item.ID
+                </td>
+                <td>
+                    @item.Name
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
